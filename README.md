@@ -12,6 +12,7 @@ This is my **review** project.
         - Talk to former student
 - G103
     - Gallery : Student recommendations (photoshop)
+    - Gallery: Student Portofilo 
     - Big Enroll button
     - Small Availbility bar
     - Course overview in icon ( Expandable) (Next section)
