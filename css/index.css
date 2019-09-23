@@ -1,7 +1,22 @@
 body {
-	background-color:lightcyan;
+	background-color: var(--background);
 	font-weight: 200;
 	font-family: Raleway, sans-serif;
 	font-style: normal;
 	font-size: 1.5rem;
+	color:var (--on-background);
+}
+html {
+	/* Background colours*/
+	--primary-a:#6200ee;
+	--primary-b:#3700b3;
+	--secondary-a:#03dac6;
+	--secondary-b:#018786;
+	--error:#b00020;
+
+	/*Foreground colours */
+	--on-primary: #ffffff;
+	--on-secondary:#000000;
+	--on-background:#222222;
+	--on-error:#ffffff;
 }
