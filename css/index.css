@@ -5,6 +5,12 @@ body {
 	font-style: normal;
 	font-size: 1.5rem;
 	color:var (--on-background);
+	font: normal normal 1em/1.5 var(--font-standard);
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: var{--font-impact};
+	font-weight: 900;
 }
 html {
 	/* Background colours*/
@@ -19,4 +25,8 @@ html {
 	--on-secondary:#000000;
 	--on-background:#222222;
 	--on-error:#ffffff;
+
+	/* Font */
+	--font-stand: "PT Serif" , georgia, serif;
+	--font-impact: "roboto", helvetica, arial, san-serif;
 }
