@@ -12,6 +12,18 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: var{--font-impact};
 	font-weight: 900;
 }
+
+a{
+	background-color: var(--primary-a);
+	color:var(--on-primary);
+	transition:background-color 0.4s;
+}
+
+a:hover{
+	background-color: var(--secondary-a);
+}
+
+
 html {
 	/* Background colours*/
 	--primary-a:#6200ee;
@@ -29,4 +41,27 @@ html {
 	/* Font */
 	--font-stand: "PT Serif" , georgia, serif;
 	--font-impact: "roboto", helvetica, arial, san-serif;
+}
+.support{
+	width: 4em;
+	height: 4em;
+	background-color:var(--secondary);
+	color:var(--on-secondary);
+	border:0;
+	border-radius:50%;
+	box-shadow:0 0 1em rbga(0,0,0,0.4);
+	text-align: center;
+	line-height:1em;
+	transition: all 0.3s;
+	cursor:pointer;
+	
+	position:fixed;
+	top: 5em;
+	right: 1em;
+	z-index: 1;
+
+}
+
+.support:hover{
+	transform: scale(1.2);
 }
