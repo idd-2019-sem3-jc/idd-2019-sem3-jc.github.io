@@ -13,6 +13,8 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight: 900;
 }
 
+
+
 a{
 	background-color: var(--primary-a);
 	color:var(--on-primary);
@@ -22,6 +24,7 @@ a{
 a:hover{
 	background-color: var(--secondary-a);
 }
+
 
 
 html {
@@ -42,11 +45,11 @@ html {
 	--font-stand: "PT Serif" , georgia, serif;
 	--font-impact: "roboto", helvetica, arial, san-serif;
 }
-.support{
+.graduate{
 	width: 4em;
 	height: 4em;
-	background-color:var(--secondary);
-	color:var(--on-secondary);
+	background-color: var(--secondary);
+	color: var(--on-secondary);
 	border:0;
 	border-radius:50%;
 	box-shadow:0 0 1em rbga(0,0,0,0.4);
@@ -62,6 +65,6 @@ html {
 
 }
 
-.support:hover{
+.ask:hover{
 	transform: scale(1.2);
 }
