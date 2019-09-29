@@ -25,7 +25,11 @@
 	margin: 25px;
 	padding: 25px;
   }
-
+.container1{
+	width: 100%;
+	display:grid;
+	grid-template-columns: auto auto auto;
+}
 .stu_gallery1{
 	width:90%;
 	height:500px;
