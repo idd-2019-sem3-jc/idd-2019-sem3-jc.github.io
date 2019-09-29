@@ -6,6 +6,9 @@
 	margin-right: auto;
   }
 
+.header{
+	background-color: var(--primary-b);
+}
 .topnav a {
 	display: inline-block;
 	float: left;
@@ -61,7 +64,7 @@
   }
 
 body {
-	background-color: var(--background);
+	background-color: var(--primary-a);
 	font-weight: 200;
 	font-family: Raleway, sans-serif;
 	font-style: normal;
@@ -90,8 +93,8 @@ a:hover{
 
 html {
 	/* Background colours*/
-	--primary-a:#6200ee;
-	--primary-b:#3700b3;
+	--primary-a:#faf3dd;
+	--primary-b:#3d405b;
 	--secondary-a:#03dac6;
 	--secondary-b:#018786;
 	--error:#b00020;
