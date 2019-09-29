@@ -6,6 +6,55 @@
 	margin-right: auto;
   }
 
+.topnav a {
+	display: inline-block;
+	float: left;
+	color: #ffffff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	width: 100px;
+	border-radius: 5px;
+	margin: 20px;
+  }
+
+.title {
+	width: 350px;
+	height: 150px;
+	margin: 25px;
+	padding: 25px;
+  }
+
+.stu_gallery1{
+	width:90%;
+	height:500px;
+	margin: 0 auto;
+	padding: 10px 10px 10px 10px;
+	display: grid;
+	overflow: hidden;
+	position: center;
+  }
+.sturec img {
+	max-width:100%;
+	object-fit: scale-down;
+  }
+.stu_gallery2{
+	width:90%;
+	height:500px;
+	margin: 0 auto;
+	padding: 10px 10px 10px 10px;
+	display: grid;
+	overflow: hidden;
+	position: center;
+  }
+
+.stuport img {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
+  }
 
 body {
 	background-color: var(--background);
@@ -35,7 +84,6 @@ a:hover{
 }
 
 
-
 html {
 	/* Background colours*/
 	--primary-a:#6200ee;
@@ -55,8 +103,8 @@ html {
 	--font-impact: "roboto", helvetica, arial, san-serif;
 }
 .graduate{
-	width: 4em;
-	height: 4em;
+	width: 5em;
+	height: 5em;
 	background-color: var(--secondary);
 	color: var(--on-secondary);
 	border:0;
