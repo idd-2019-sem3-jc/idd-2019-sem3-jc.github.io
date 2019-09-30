@@ -70,7 +70,8 @@ header{
   grid-template-rows: 400px 400px ;
   grid-gap: 10px;
   height: 900px;
-  background-color: #fffff0;
+  background-color: #fbfefb;
+  padding: 20px;
 }
 .stu_gallery1{
 	width: 100%; 
@@ -166,7 +167,7 @@ a:hover{
 
 html {
 	/* Background colours*/
-	--primary-a:#faf3dd;
+	--primary-a:#f0f8ff;
 	--primary-b:#041a2f;
 	--secondary-a:#03dac6;
 	--secondary-b:#5e6472;
