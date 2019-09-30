@@ -239,6 +239,12 @@ footer {
 }
 
 
+<div class="layout">
+  <div class="one">a</div>
+  <div class="two">b</div>
+  <div class="three">c</div>
+</div>
+
 .layout {
   display: grid;
   grid-template-columns: 3fr 1fr;
