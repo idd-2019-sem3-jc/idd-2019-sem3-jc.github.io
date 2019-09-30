@@ -153,11 +153,9 @@ header{
 body {
 	background-color: var(--primary-a);
 	font-weight: 200;
-	font-family: Raleway, sans-serif;
 	font-style: normal;
 	font-size: 1.5rem;
-	color:var (--on-background);
-	font: normal normal 1em/1.5 var(--font-standard);
+	font: normal normal 1em/1.5;
 }
 
 a:hover{
@@ -205,11 +203,14 @@ ul {
 	background: #3399ff;
 	padding: 20px;
 	height: 250px;
+	text-align: center;
   }
 
 ul li {
 	background: #cce5ff;
 	margin: 5px;
+	color: white; 
+	font-family: 'Comfortaa', cursive;
   }
 footer {
 	background-color: var(--secondary-b);
