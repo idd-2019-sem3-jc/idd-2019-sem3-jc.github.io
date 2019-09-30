@@ -2,6 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 
+html {
+	font-size: 0.625em;
+}
+
+
+
 .logo {
 	width: 150px;
 	height: 100px;
@@ -17,17 +23,13 @@
 	width: 100%;
 	box-shadow: 5px 6px 6px 6px #02111f;
 }
-.header input[type=text] {
-	float: right;
-  }
 
 .topnav{
 	text-align: center;
 }
 .topnav a {
-	display: center;
+	display: inline-block;
 	background-color: var(--primary-b);
-	float: center;
 	color: #ffffff;
 	text-align: center;
 	padding: 14px 16px;
@@ -37,7 +39,7 @@
 	border-radius: 5px;
 	margin: 20px;
 	font-family: 'Comfortaa', cursive;
-  }
+}
 
 .title {
 	width: 100%;
@@ -46,7 +48,7 @@
 	padding: 45px;
 	font-family: 'Poiret One', cursive;
 	font-size: 3em;
-  }
+}
 
 .button {
 	background-color: #8aa399;
@@ -61,7 +63,6 @@
 	cursor: pointer;
 	border-radius: 5px;
 	font-size: 1em;
-	float: center;
   }
 
 .container1{
@@ -202,7 +203,6 @@ html {
 ul {
 	background: #3399ff;
 	padding: 20px;
-	height: 250px;
 	text-align: center;
   }
 
@@ -216,7 +216,6 @@ footer {
 	background-color: var(--secondary-b);
 	width:100%;
 	min-height: 250px;
-	color: white;
 	font-family: 'Comfortaa', cursive;
 	padding: 5px 5px 5px 5px;
 	margin-left: auto;
@@ -237,5 +236,28 @@ footer {
 	.all-products {
 		grid-template-columns: 1fr 1fr 1fr
 	}
+}
+
+
+.layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+    "a c"
+    "b c";
+  grid-gap: 1em;
+}
+
+.one {
+  grid-area: a;
+  background-color: red;
+}
+.two {
+  grid-area: b;
+  background-color: green;
+}
+.three {
+  grid-area: c;
+  background-color: blue;
 }
 */
