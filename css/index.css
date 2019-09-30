@@ -223,3 +223,19 @@ footer {
 	margin-right: auto;
 	text-align: center;
 }
+
+/*
+@media screen and (min-width : 900px) {
+
+	.all-products {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+
+}
+
+@media screen and (min-width : 1325px){
+	.all-products {
+		grid-template-columns: 1fr 1fr 1fr
+	}
+}
+*/
