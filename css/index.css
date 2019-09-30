@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
 .logo {
 	width: 150px;
 	height: 100px;
@@ -9,7 +13,8 @@
 
 header{
 	background-color: var(--primary-b);
-	height: 180px;
+	height: 200px;
+	width: 100%;
 }
 .header input[type=text] {
 	float: right;
@@ -30,35 +35,57 @@ header{
 	width: 100px;
 	border-radius: 5px;
 	margin: 20px;
+	font-family: 'Comfortaa', cursive;
   }
 
 .title {
-	width: 350px;
-	height: 150px;
-	margin: 25px;
-	padding: 25px;
-  }
-.container1{
 	width: 100%;
+	height: 120px;
+	margin: 25px;
+	padding: 45px;
+	font-family: 'Poiret One', cursive;
+	font-size: 3em;
+  }
+
+.button {
+	background-color: #8aa399;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 1em;
+	float: center;
+  }
+
+.container1{
 	display:grid;
-	grid-template-columns: auto auto auto;
+  grid-template-columns:  auto 800px;
+  grid-template-rows: 400px 400px ;
+  grid-gap: 10px;
+  height: 900px;
+  background-color: #fffff0;
 }
 .stu_gallery1{
-	width:90%;
-	height:500px;
-	margin: 0 auto;
-	padding: 10px 10px 10px 10px;
-	display: grid;
-	overflow: hidden;
-	position: center;
+	width: 100%; 
+	height: 100%; 
+	object-fit: contain; 
+	display:grid;
   }
 .sturec img {
-	max-width:100%;
-	object-fit: scale-down;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
   }
 .stu_gallery2{
 	width:90%;
-	height:500px;
+	height:90%;
 	margin: 0 auto;
 	padding: 10px 10px 10px 10px;
 	display: grid;
@@ -72,7 +99,55 @@ header{
   	margin-right: auto;
   	width: 50%;
   }
+.program_availability{
+	font-family: 'Comfortaa', cursive;
+}
 
+.overview{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid gap: 20px;
+	padding: 10px;
+	background-color: #1e2019;
+	width:100%;
+	height: 300px;
+	color: white; 
+	font-family: 'Comfortaa', cursive;
+	
+}
+
+.program_availability img{
+	max-width:10%;
+	height:auto;
+	display: block;
+}
+
+.program img{
+	max-width:30%;
+	height:auto;
+	display: block;
+  	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	
+}
+.skills img{
+	max-width:30%;
+	height:auto;
+	display: block;
+  	margin-left: auto;
+	  margin-right: auto;
+	  padding: 20px;
+	
+}
+.software img{
+	max-width:30%;
+	height:auto;
+	display: block;
+  	margin-left: auto;
+	  margin-right: auto;
+	  padding: 20px;
+}
 body {
 	background-color: var(--primary-a);
 	font-weight: 200;
@@ -83,19 +158,6 @@ body {
 	font: normal normal 1em/1.5 var(--font-standard);
 }
 
-h1,h2,h3,h4,h5,h6 {
-	font-family: var{--font-impact};
-	font-weight: 900;
-}
-
-
-
-a{
-	background-color: var(--primary-a);
-	color:var(--on-primary);
-	transition:background-color 0.4s;
-}
-
 a:hover{
 	background-color: var(--secondary-a);
 }
@@ -104,25 +166,14 @@ a:hover{
 html {
 	/* Background colours*/
 	--primary-a:#faf3dd;
-	--primary-b:#3d405b;
+	--primary-b:#041a2f;
 	--secondary-a:#03dac6;
-	--secondary-b:#018786;
-	--error:#b00020;
-
-	/*Foreground colours */
-	--on-primary: #ffffff;
-	--on-secondary:#000000;
-	--on-background:#222222;
-	--on-error:#ffffff;
-
-	/* Font */
-	--font-stand: "PT Serif" , georgia, serif;
-	--font-impact: "roboto", helvetica, arial, san-serif;
+	--secondary-b:#5e6472;
 }
 .graduate{
 	width: 5em;
 	height: 5em;
-	background-color: var(--secondary);
+	background-color: var(--secondary-b);
 	color: var(--on-secondary);
 	border:0;
 	border-radius:50%;
@@ -138,25 +189,3 @@ html {
 	z-index: 1;
 
 }
-
-.ask:hover{
-	transform: scale(1.2);
-}
-
-/*
-@media only screen and (min-width: 768px) {
-	.featuredProducts {
-	  grid-template-columns: repeat(4,1fr);
-	}
-  }
-  @media only screen and (max-width: 768px) {
-	.featuredProducts {
-	  grid-template-columns: repeat(2,1fr);
-	}
-  }
-  @media only screen and (max-width: 600px) {
-	.featuredProducts {
-	  grid-template-columns: repeat(1,1fr);
-	}
-  }
-  */
