@@ -4,24 +4,24 @@
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 20px;
   }
 
-.header{
+header{
 	background-color: var(--primary-b);
+	height: 180px;
 }
 .header input[type=text] {
 	float: right;
-	padding: 6px;
-	border: none;
-	margin-top: 8px;
-	margin-right: 16px;
-	font-size: 17px;
   }
 
+.topnav{
+	text-align: center;
+}
 .topnav a {
 	display: center;
 	background-color: var(--primary-b);
-	float: left;
+	float: center;
 	color: #ffffff;
 	text-align: center;
 	padding: 14px 16px;
