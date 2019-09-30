@@ -11,9 +11,9 @@
 	padding: 20px;
   }
 
-header{
-	background-color: var(--primary-b);
-	height: 200px;
+.header{
+	background-color: #041a2f;
+	height: 150px;
 	width: 100%;
 	box-shadow: 5px 6px 6px 6px #02111f;
 }
