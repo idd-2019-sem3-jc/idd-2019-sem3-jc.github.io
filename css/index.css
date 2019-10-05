@@ -6,8 +6,6 @@ html {
 	font-size: 0.625em;
 }
 
-
-
 .logo {
 	width: 150px;
 	height: 100px;
@@ -20,8 +18,8 @@ html {
 .header{
 	background-color: #041a2f;
 	min-height: 150px;
-	width: 100%;
 	box-shadow: 5px 6px 6px 6px #02111f;
+	display: block;
 }
 
 .topnav{
@@ -35,7 +33,6 @@ html {
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 17px;
-	width: 100px;
 	border-radius: 5px;
 	margin: 20px;
 	font-family: 'Comfortaa', cursive;
@@ -44,10 +41,11 @@ html {
 .title {
 	width: 100%;
 	min-height: 120px;
-	margin: 25px;
-	padding: 45px;
+	margin: 1em 1em;
+	padding: 1em 1em;
 	font-family: 'Poiret One', cursive;
 	font-size: 3em;
+	display:block
 }
 
 .button {
@@ -64,51 +62,52 @@ html {
 	border-radius: 5px;
 	font-size: 1em;
   }
-
+  
 .container1{
 	display:grid;
-  grid-template-columns:  auto 800px;
-  grid-template-rows: 400px 400px ;
-  grid-gap: 10px;
+  grid-template-columns:  3fr 1fr;
+grid-template-areas:
+"stu1 prog"
+"stu2 prog";
+
+  grid-gap: 1em;
   min-height: 900px;
   background-color: #fbfefb;
   padding: 20px;
 }
-.stu_gallery1{
-	width: 100%; 
-	height: 100%; 
-	object-fit: contain; 
+.stu1 {
 	display:grid;
+	grid-area:stu1;
   }
 .sturec img {
-	display: block;
+	display: inline-grid;
   	margin-left: auto;
   	margin-right: auto;
   	width: 50%;
   }
-.stu_gallery2{
-	width:90%;
-	height:90%;
-	margin: 0 auto;
-	padding: 10px 10px 10px 10px;
-	display: grid;
-	overflow: hidden;
-	position: center;
+.stu2 {
+	display:grid;
+	grid-area:stu2;
   }
 
 .stuport img {
-	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-  	width: 50%;
-  }
-.program_availability{
-	font-family: 'Comfortaa', cursive;
+	display: inline-grid;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
 
+.prog {
+	font-family: 'Comfortaa', cursive;
+	grid-area: prog;
+}
+
+.prog img{
+	display: inline-grid;
+}
 .overview{
 	display: grid;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: 1fr 1fr 1fr;
 	grid gap: 20px;
 	padding: 10px;
 	background-color: #1e2019;
@@ -119,37 +118,11 @@ html {
 	
 }
 
-.program_availability img{
-	max-width:10%;
-	height:auto;
-	display: block;
-}
-
-.program img{
-	max-width:30%;
-	height:auto;
-	display: block;
+.overview img{
+	display: inline-grid;
   	margin-left: auto;
 	margin-right: auto;
 	padding: 20px;
-	
-}
-.skills img{
-	max-width:30%;
-	height:auto;
-	display: block;
-  	margin-left: auto;
-	  margin-right: auto;
-	  padding: 20px;
-	
-}
-.software img{
-	max-width:30%;
-	height:auto;
-	display: block;
-  	margin-left: auto;
-	  margin-right: auto;
-	  padding: 20px;
 }
 body {
 	background-color: var(--primary-a);
@@ -200,18 +173,19 @@ html {
 	
 }
 
-ul {
+.topnav ul {
 	background: #3399ff;
 	padding: 20px;
 	text-align: center;
   }
 
-ul li {
+.topnav li {
 	background: #cce5ff;
 	margin: 5px;
 	color: white; 
 	font-family: 'Comfortaa', cursive;
   }
+
 footer {
 	background-color: var(--secondary-b);
 	width:100%;
@@ -223,47 +197,18 @@ footer {
 	text-align: center;
 }
 
-/*
+
 @media screen and (min-width : 900px) {
 
-	.all-products {
+	.overview {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 
 }
 
 @media screen and (min-width : 1325px){
-	.all-products {
+	.overview {
 		grid-template-columns: 1fr 1fr 1fr
 	}
 }
 
-
-<div class="layout">
-  <div class="one">a</div>
-  <div class="two">b</div>
-  <div class="three">c</div>
-</div>
-
-.layout {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-areas:
-    "a c"
-    "b c";
-  grid-gap: 1em;
-}
-
-.one {
-  grid-area: a;
-  background-color: red;
-}
-.two {
-  grid-area: b;
-  background-color: green;
-}
-.three {
-  grid-area: c;
-  background-color: blue;
-}
-*/
