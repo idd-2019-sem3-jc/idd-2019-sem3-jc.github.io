@@ -78,6 +78,7 @@ grid-template-areas:
 .stu1 {
 	display:grid;
 	grid-area:stu1;
+	margin: 0 auto;
   }
 .sturec img {
 	display: inline-grid;
@@ -88,6 +89,7 @@ grid-template-areas:
 .stu2 {
 	display:grid;
 	grid-area:stu2;
+	margin: 0 auto;
   }
 
 .stuport img {
@@ -100,6 +102,7 @@ grid-template-areas:
 .prog {
 	font-family: 'Comfortaa', cursive;
 	grid-area: prog;
+	margin: 0 auto;
 }
 
 .prog img{
@@ -182,9 +185,11 @@ html {
 
 .topnav li {
 	background: #cce5ff;
-	margin: 5px;
+	margin: 1em;
 	color: white; 
 	font-family: 'Comfortaa', cursive;
+	display: inline-block;
+	border-radius: 5px;
   }
 
 footer {
