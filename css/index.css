@@ -108,13 +108,14 @@ grid-template-areas:
 .overview{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid gap: 20px;
-	padding: 10px;
+	grid gap: 6em;
+	padding: 4em;
 	background-color: #1e2019;
 	width:100%;
 	min-height: 300px;
 	color: white; 
 	font-family: 'Comfortaa', cursive;
+	text-align: center;
 	
 }
 
@@ -197,18 +198,38 @@ footer {
 	text-align: center;
 }
 
-
-@media screen and (min-width : 900px) {
+@media screen and (min-width : 320px) {
 
 	.overview {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-
-}
-
-@media screen and (min-width : 1325px){
-	.overview {
-		grid-template-columns: 1fr 1fr 1fr
+		grid-template-columns: 1fr;
 	}
+		
+	.container1 {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas: "stu1" "stu2" "prog";
+	}
+
 }
 
+@media screen and (min-width : 768px) {
+	
+	.overview {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.container1{
+		display:grid;
+	  grid-template-columns:  3fr 1fr;
+	grid-template-areas:
+	"stu1 prog"
+	"stu2 prog";
+	
+	  grid-gap: 1em;
+	  min-height: 900px;
+	  background-color: #fbfefb;
+	  padding: 20px;
+	}
+
+}
