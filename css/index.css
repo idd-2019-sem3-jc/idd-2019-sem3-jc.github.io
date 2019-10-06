@@ -129,7 +129,7 @@ grid-template-areas:
 	padding: 20px;
 }
 body {
-	background-color: var(--primary-a);
+	background-color: #666;
 	font-weight: 200;
 	font-style: normal;
 	font-size: 1.5rem;
@@ -191,6 +191,28 @@ html {
 	display: inline-block;
 	border-radius: 5px;
   }
+
+.more_info{
+	display: block;
+	background: #02111f;
+	font-family: 'Comfortaa', cursive;
+	margin: 0 auto;
+	text-align: center;
+}
+.more_info li {
+	border: 2em;
+	display: inline-block;
+	padding: 2em;
+	margin: 0 auto;
+	text-align: center;
+	width: 50%
+}
+.more_info a {
+ margin:20px;
+ text-align: center;
+ color: white;
+ font-size: 2em;
+}
 
 .footer {
 	background-color: var(--secondary-b);
