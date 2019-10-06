@@ -192,15 +192,23 @@ html {
 	border-radius: 5px;
   }
 
-footer {
+.footer {
 	background-color: var(--secondary-b);
 	width:100%;
 	min-height: 250px;
 	font-family: 'Comfortaa', cursive;
-	padding: 5px 5px 5px 5px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	display: grid;
+	grid-auto-columns: 1fr 1fr;
+	color: white;
+}
+
+.contact_us{
+	margin: 0 auto;
+	padding:2em;
+	display:inline-grid;
 }
 
 @media screen and (min-width : 320px) {
