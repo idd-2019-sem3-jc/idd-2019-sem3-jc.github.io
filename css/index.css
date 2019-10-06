@@ -62,7 +62,35 @@ html {
 	border-radius: 5px;
 	font-size: 1em;
   }
+  .overlay1 {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #111;
+  }
   
+  .stu1:hover .overlay {
+	opacity: 0.5;
+  }
+  
+  .text1 {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+  }
+
 .container1{
 	display:grid;
   grid-template-columns:  3fr 1fr;
@@ -76,6 +104,8 @@ grid-template-areas:
   padding: 20px;
 }
 .stu1 {
+	position: relative;
+	width:100%;
 	display:grid;
 	grid-area:stu1;
 	margin: 0 auto;
